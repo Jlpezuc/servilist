@@ -1,0 +1,20 @@
+<style>
+    mat-sidenav-container {
+      height: 100%;
+    }
+</style>
+  
+
+  <mat-sidenav-container>
+    <mat-sidenav [(opened)]="showSide" >
+  
+      <app-side></app-side>
+  
+    </mat-sidenav>
+  
+    <mat-sidenav-content>
+  
+      <app-header (showSideEvent)="receiveShowSide()"></app-header>
+  
+    </mat-sidenav-content>
+  </mat-sidenav-container>

@@ -1,0 +1,101 @@
+<style>
+
+    .side {
+        width: 300px;
+    }
+
+    .buttons {
+        position: relative;
+        top: 20px;
+        height: 100%;
+        display: flex;
+    }
+
+    .spacer {
+        flex: 1;
+    }
+
+    .content {
+        position: relative;
+        top: 40px;
+        padding: 30px;
+    }
+
+    h2 {
+        font-size: large;
+        font-weight: bold;
+    }
+
+    .link a {
+        font-size: large;
+        align-items: center;
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        display: flex;
+        height: 40px;
+        width: 130px;
+        transition: 0.2s;
+    }
+
+    .link a:hover {
+        color: #8434ad;
+        width: 200px;
+    }
+    
+    .categories {
+        padding-bottom: 10px;
+    }
+
+    .categories-title {
+        
+    }
+
+</style>
+
+<div class="side">
+    <div class="buttons">
+        <div class="spacer"></div>
+        <app-access-buttons></app-access-buttons>
+        <div class="spacer"></div>
+    </div>
+
+    <!-- <mat-divider></mat-divider> -->
+
+    <div class="content">
+
+        <div class="categories">
+            <div class="categories-title">Categorias</div>
+            <!-- Deberia obtenerse de la api -->
+            <div class="link">
+                <a class="link" href="/peluqueria">
+                    Peluqueria
+                    <div class="spacer"></div>
+                    <mat-icon>chevron_right</mat-icon>
+                </a>
+            </div>
+            <div class="link">
+                <a class="link" href="/jardinero">
+                    Jardinero
+                    <div class="spacer"></div>
+                    <mat-icon>chevron_right</mat-icon>
+                </a>
+            </div>
+            <div class="link">
+                <a class="link" href="/ninera">
+                    Niñera
+                    <div class="spacer"></div>
+                    <mat-icon>chevron_right</mat-icon>
+                </a>
+            </div>
+            <div class="link">
+                <a class="link" href="/nose">
+                    Nose
+                    <div class="spacer"></div>
+                    <mat-icon>chevron_right</mat-icon>
+                </a>
+            </div>
+        </div>
+        <mat-divider></mat-divider>
+    </div>
+</div>

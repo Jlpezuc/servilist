@@ -1,0 +1,24 @@
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    justify-content: space-between;
+    border-bottom: 2px solid;
+    border-color: rgb(157, 157, 157);
+}
+
+.title {
+    font-weight: bold;
+    padding: 20px;
+    color: #8434ad;
+}
+
+.title span {
+    padding-left: 10px;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+}
